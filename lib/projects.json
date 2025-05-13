@@ -2,27 +2,27 @@
     {
         "title": "Food Rating Prediction",
         "year": 2025,
-        "image": "images/food-rating.png",
+        "image": "../images/food-rating.png",
         "description": "This project investigates the relationship between recipe characteristics—particularly calories—and user-generated ratings. Using recipes and ratings posted since 2008 on Food.com, we will build predictive models to understand how nutritional content influences user ratings."
     },
     {
         "title": "San Diego Bus Route Optimizer",
         "year": 2025,
         "description": "Built a bus route optimizer to find the fastest paths using Dijkstra's algorithm and visualize with Plotly.",
-        "image": "images/bus-route.png",
+        "image": "../images/bus-route.png",
         "github": "https://github.com/neildewan7/san-diego-bus-route-optimizer",
         "demo": "https://nbviewer.org/github/neildewan7/san-diego-bus-route-optimizer/blob/main/cleaned_project.ipynb"
     },
     {
         "title": "N-Gram Language Model",
         "year": 2025,
-        "image": "images/ngram.png",
+        "image": "../images/ngram.png",
         "description": "This project implements an N-Gram Language Model to generate and predict sequences of text based on learned probability distributions. The model estimates the probability of a word given its previous context using n-gram statistics."
     },
     {
         "title": "Loan Application EDA",
         "year": 2025,
-        "image": "images/loans_proj.png",
+        "image": "../images/loans_proj.png",
         "description": "This project explores and analyzes a real-world dataset of approved loan applications from LendingClub. It investigates how borrower characteristics influence loan terms, interest rates, and risk assessment by lenders."
     },
     {
