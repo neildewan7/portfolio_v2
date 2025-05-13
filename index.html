@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neil Dewan: Personal site and portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="global.js"></script>
+</head>
+<body>
+
+  <h1>Neil Dewan</h1>
+  <img src="images/headshot.jpg" alt="This is me suited up for formal with my girlfriend!" style="width: 200px; height: auto;">
+  <p>Hi, I'm Neil Dewan and I am a second year student at the Halıcıoğlu Data Science Institute at UC San Diego.</p>
+
+  <!-- PIE CHART + LEGEND CONTAINER -->
+  <div class="container">
+    <svg id="projects-plot" viewBox="-50 -50 100 100"></svg>
+    <ul class="legend"></ul>
+  </div>
+
+  <input
+    class="searchBar"
+    type="search"
+    aria-label="Search projects"
+    placeholder="🔍 Search projects…"
+  />
+
+  <h2>Latest Projects</h2>
+  <div class="projects">
+    <!-- Latest 3 projects will be inserted here -->
+  </div>
+
+  <h2>GitHub Stats</h2>
+  <div id="profile-stats">
+    <!-- GitHub stats will be inserted here -->
+  </div>
+
+  <script src="index.js" type="module" defer></script>
+</body>
+</html>
