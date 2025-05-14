@@ -44,7 +44,7 @@ function $$(selector, context = document) {
 const BASE_PATH =
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
     ? "/"
-    : "/portfolio/"; // CHANGE "portfolio" if your repo is named something else
+    : "/portfolio_v2/"; // CHANGE "portfolio" if your repo is named something else
 
 let pages = [
   { url: "", title: "Home" },
