@@ -47,6 +47,13 @@
       "image": "/portfolio_v2/images/grocery-store.png",
       "description": "This project visualizes what kind of products are sold grocery store data using Plotly and Seaborn to analyze inventory and health trends.",
       "demo": ""
-    }
+    },
+    {
+        "title": "Visulization of Bike Lane Usage in Boston",
+        "year": 2025,
+        "image": "/portfolio_v2/images/bikelanes.png",
+        "description": "This interactive visualization makes us of Mapbox and the data from the City of Boston to show the rates of bike lane usage in the city.",
+        "github": "https://neildewan7.github.io/bikelanes/"
+      }
   ]
   
