@@ -52,8 +52,10 @@ let pages = [
   { url: "resume/", title: "Resume" },
   { url: "jp-resume/", title: "日本語履歴書" }, // ✨ NEW Japanese Resume tab
   { url: "contact/", title: "Contact" },
-  { url: "meta/", title: "Meta" },
   { url: "https://github.com/neildewan7", title: "GitHub" }
+  // "meta/" (Code Stats page) intentionally left out of nav -- leftover
+  // course-assignment page, not relevant to a recruiter-facing nav. File
+  // still exists if you want it back.
 ];
 
 let nav = document.createElement("nav");

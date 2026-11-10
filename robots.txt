@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neildewan7.github.io/portfolio_v2/sitemap.xml
