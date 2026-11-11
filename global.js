@@ -23,11 +23,26 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     // Create an <article> element
     const article = document.createElement('article');
 
+    const image = project.image
+      ? `<img src="${project.image}" alt="${project.title}">`
+      : '';
+
+    const tags = project.tags
+      ? `<ul class="tag-list">${project.tags.map(t => `<li>${t}</li>`).join('')}</ul>`
+      : '';
+
+    const links = [];
+    if (project.github) links.push(`<a href="${project.github}" target="_blank" rel="noopener">GitHub ↗</a>`);
+    if (project.demo) links.push(`<a href="${project.demo}" target="_blank" rel="noopener">Live demo ↗</a>`);
+    const linksHtml = links.length ? `<p class="project-links">${links.join(' · ')}</p>` : '';
+
     // Use a dynamic heading tag (e.g., h2, h3, etc.)
     article.innerHTML = `
   <${headingLevel}>${project.title} <span style="font-size: 0.8em; color: gray;">(${project.year})</span></${headingLevel}>
-  <img src="${project.image}" alt="${project.title}">
+  ${image}
   <p>${project.description}</p>
+  ${tags}
+  ${linksHtml}
 `;
 
     // Append the article to the container
@@ -49,8 +64,9 @@ const BASE_PATH =
 let pages = [
   { url: "", title: "Home" },
   { url: "projects/", title: "Projects" },
+  { url: "experience/", title: "Experience" },
   { url: "resume/", title: "Resume" },
-  { url: "jp-resume/", title: "日本語履歴書" }, // ✨ NEW Japanese Resume tab
+  { url: "jp-resume/", title: "日本語履歴書" },
   { url: "contact/", title: "Contact" },
   { url: "https://github.com/neildewan7", title: "GitHub" }
   // "meta/" (Code Stats page) intentionally left out of nav -- leftover
@@ -91,9 +107,10 @@ for (let p of pages) {
   
 
 
-document.body.insertAdjacentHTML(
-  "afterbegin",
+nav.insertAdjacentHTML(
+  "beforeend",
   `
+  <div class="site-controls">
     <label class="color-scheme">
         Theme:
         <select>
@@ -101,8 +118,32 @@ document.body.insertAdjacentHTML(
             <option value="light">Light</option>
             <option value="dark">Dark</option>
         </select>
-    </label>`,
+    </label>
+    <label class="lang-switch">
+        <select>
+            <option value="en">EN</option>
+            <option value="ja">日本語</option>
+        </select>
+    </label>
+  </div>`,
 );
+
+// --- EN/JA toggle for elements marked with [data-en] / [data-ja] ---
+// (currently only wired up on the homepage hero intro -- see index.html)
+function setSiteLang(lang) {
+  document.documentElement.classList.remove("lang-en", "lang-ja");
+  document.documentElement.classList.add(`lang-${lang}`);
+  localStorage.siteLang = lang;
+}
+
+const langSelect = document.querySelector(".lang-switch select");
+const savedLang = localStorage.siteLang || "en";
+setSiteLang(savedLang);
+langSelect.value = savedLang;
+
+langSelect.addEventListener("change", (event) => {
+  setSiteLang(event.target.value);
+});
 let form = document.querySelector("#contact-form");
 
 form?.addEventListener("submit", (event) => {

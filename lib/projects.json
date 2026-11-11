@@ -1,59 +1,91 @@
 [
-    {
-      "title": "Food Rating Prediction",
-      "year": 2025,
-      "image": "/portfolio_v2/images/food-rating.png",
-      "description": "This project investigates the relationship between recipe characteristics—particularly calories—and user-generated ratings."
-    },
-    {
-      "title": "San Diego Bus Route Optimizer",
-      "year": 2024,
-      "description": "Built a bus route optimizer to find the fastest paths using Dijkstra's algorithm and visualize with Plotly.",
-      "image": "/portfolio_v2/images/bus-route.png",
-      "github": "https://github.com/neildewan7/san-diego-bus-route-optimizer",
-      "demo": "https://nbviewer.org/github/neildewan7/san-diego-bus-route-optimizer/blob/main/cleaned_project.ipynb"
-    },
-    {
-      "title": "N-Gram Language Model",
-      "year": 2025,
-      "image": "/portfolio_v2/images/ngram.png",
-      "description": "This project implements an N-Gram Language Model to generate and predict sequences of text based on learned probability distributions."
-    },
-    {
-      "title": "Loan Application EDA",
-      "year": 2024,
-      "image": "/portfolio_v2/images/loans_proj.png",
-      "description": "This project explores and analyzes a real-world dataset of approved loan applications from LendingClub."
-    },
-    {
-      "title": "Custom Image Processing and Classification",
-      "year": 2024,
-      "image": "/portfolio_v2/images/image-processing.png",
-      "description": "This project implements image processing techniques (negation, grayscale, rotation, chroma key, stickers, edge detection) and includes a custom-built K-Nearest Neighbors (KNN) image classifier using Python.",
-      "github": "https://github.com/neildewan7/image-processing-classification",
-      "demo": ""
-    },
-    {
-      "title": "Persuasive and Deceptive Climate Visualizations",
-      "year": 2025,
-      "image": "/portfolio_v2/images/climate-change.png",
-      "description": "This project examines environmental and climate data, showing how honest or deceptive visualizations can influence perceptions through design choices like filtering, scaling, and annotation.",
-      "github": "https://neildewan7.github.io/dsc106-proj2/",
-      "demo": "https://nbviewer.org/github/neildewan7/climate-visualization-project/blob/main/cleaned_project.ipynb"
-    },
-    {
-      "title": "Grocery Store Visualization",
-      "year": 2025,
-      "image": "/portfolio_v2/images/grocery-store.png",
-      "description": "This project visualizes what kind of products are sold grocery store data using Plotly and Seaborn to analyze inventory and health trends.",
-      "demo": ""
-    },
-    {
-        "title": "Visulization of Bike Lane Usage in Boston",
-        "year": 2025,
-        "image": "/portfolio_v2/images/bikelanes.png",
-        "description": "This interactive visualization makes us of Mapbox and the data from the City of Boston to show the rates of bike lane usage in the city.",
-        "github": "https://neildewan7.github.io/bikelanes/"
-      }
-  ]
-  
+  {
+    "title": "Ukraine Crisis Map",
+    "year": 2026,
+    "description": "Interactive strike & displacement map built for a humanitarian mapathon — Best Design, 2nd of 50+ teams.",
+    "tags": ["MapLibre GL JS", "Geospatial", "Data Viz"],
+    "github": "https://github.com/neildewan7/ukraine-strikes"
+  },
+  {
+    "title": "Multilingual News Divergence Agent",
+    "year": 2026,
+    "description": "AI agent that cross-references multilingual news coverage of the same event to surface factual divergence — Google Cloud Rapid Agent Hackathon (Elastic track), 14,000+ participants.",
+    "tags": ["LangChain", "Gemini", "Elasticsearch"],
+    "github": "https://github.com/neildewan7/news-divergence-agent"
+  },
+  {
+    "title": "Vera Credential Registry",
+    "year": 2026,
+    "description": "Blockchain credential registry — DSC180A/B capstone. 9 contracts, 77 tests passing, deployed to Polygon Amoy.",
+    "tags": ["Solidity", "Hardhat", "Blockchain"],
+    "github": "https://github.com/neildewan7/vera-credentials"
+  },
+  {
+    "title": "Deliberation & Vote-Buying Replication",
+    "year": 2026,
+    "description": "Solo replication and extension of Wantchekon & Guardado (2024, APSR) on deliberation and vote-buying in a Beninese election.",
+    "tags": ["R", "Econometrics", "Causal Inference"]
+  },
+  {
+    "title": "AI Baseball Agent",
+    "year": 2025,
+    "description": "Discrete HMM (EM-trained) + Viterbi decoding for pitch-sequence prediction, plus an RL batting agent — 80% next-pitch accuracy on a season (~3,000 pitches). 5-person team project (UCSD CSE 150A), contributor.",
+    "tags": ["HMM", "Viterbi", "Reinforcement Learning"],
+    "github": "https://github.com/jordipham/CSE150A_Project"
+  },
+  {
+    "title": "UCSD Parking Occupancy Analysis",
+    "year": 2025,
+    "description": "Statistical analysis of UCSD parking occupancy by permit type (F = 25.52, p < 0.001); findings presented to UCSD Transportation Services.",
+    "tags": ["ANOVA", "Permutation Test", "pandas"],
+    "github": "https://github.com/neildewan7/dsc190_parking_project"
+  },
+  {
+    "title": "Stress & Academic Performance Analysis",
+    "year": 2025,
+    "description": "Interactive visualization of physiological stress vs. exam performance — HDSI data-storytelling competition, 50+ teams.",
+    "tags": ["D3.js", "k-means", "pandas"],
+    "github": "https://github.com/neildewan7/student_stress_vs_exam"
+  },
+  {
+    "title": "Triton2GO Wait-Time Prediction",
+    "year": 2025,
+    "description": "ML-based wait-time prediction for UCSD's campus dining order app, integrated into the existing data pipeline. 4-person team.",
+    "tags": ["pandas", "Machine Learning"],
+    "github": "https://github.com/neildewan7/Triton2GO"
+  },
+  {
+    "title": "N-Gram Language Model",
+    "year": 2025,
+    "image": "/portfolio_v2/images/ngram.png",
+    "description": "An N-Gram language model implemented from scratch to generate and predict text sequences, trained on a Project Gutenberg corpus.",
+    "tags": ["Python", "NLP"],
+    "github": "https://github.com/neildewan7/n-gram-model"
+  },
+  {
+    "title": "Boston Bike Lane Usage",
+    "year": 2025,
+    "image": "/portfolio_v2/images/bikelanes.png",
+    "description": "Interactive visualization of bike lane usage rates across Boston using city data.",
+    "tags": ["Mapbox GL JS", "D3.js"],
+    "github": "https://github.com/neildewan7/bikelanes",
+    "demo": "https://neildewan7.github.io/bikelanes/"
+  },
+  {
+    "title": "Persuasive & Deceptive Climate Visualizations",
+    "year": 2025,
+    "image": "/portfolio_v2/images/climate-change.png",
+    "description": "Examines how honest or deceptive visualization choices (filtering, scaling, annotation) can shape perception of climate data.",
+    "tags": ["D3.js", "Data Viz"],
+    "github": "https://github.com/neildewan7/dsc106-proj2",
+    "demo": "https://neildewan7.github.io/dsc106-proj2/"
+  },
+  {
+    "title": "Loan Application EDA",
+    "year": 2024,
+    "image": "/portfolio_v2/images/loans_proj.png",
+    "description": "Exploratory analysis of approved LendingClub loan applications — how borrower characteristics relate to loan terms and risk.",
+    "tags": ["pandas", "EDA"],
+    "github": "https://github.com/neildewan7/loans-analysis"
+  }
+]

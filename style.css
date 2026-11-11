@@ -170,22 +170,102 @@ section header h2 {
   margin-bottom: 0.75em;
 }
 
-/* Theme switcher */
-.color-scheme {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+/* Header controls (theme + language switchers) -- sit inline at the end
+   of the nav flex row, not absolutely positioned over it. */
+.site-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex: 0 0 auto;
+  margin-left: auto;
+  padding: 0.5em;
+}
+
+.color-scheme,
+.lang-switch {
   font-size: 80%;
   font-family: inherit;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.color-scheme select,
+.lang-switch select {
+  font: inherit;
   background-color: canvas;
-  padding: 0.25em 0.5em;
-  border-radius: 0.5em;
-  box-shadow: 0 0.1em 0.3em oklch(0% 0 0 / 0.2);
+  color: canvastext;
+  border-radius: 0.3em;
+}
+
+/* EN/JA content toggling -- default (no class yet, or .lang-en) shows
+   [data-en], hides [data-ja]; .lang-ja flips it. */
+[data-ja] { display: none; }
+html.lang-ja [data-ja] { display: revert; }
+html.lang-ja [data-en] { display: none; }
+
+/* Project card tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0;
+}
+
+.tag-list li {
+  font-size: 0.75em;
+  padding: 0.2em 0.6em;
+  border-radius: 1em;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   color: canvastext;
 }
 
-.color-scheme select {
-  font: inherit;
+.project-links {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+.project-links a {
+  color: var(--color-accent);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5em 0 2.5em;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1em;
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.2em;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: color-mix(in oklch, canvastext, var(--color-accent) 30%);
+  margin-bottom: 0.75em;
+}
+
+/* Experience page */
+.timeline .job {
+  margin-bottom: 2em;
+}
+
+.job .dates {
+  font-size: 0.85em;
+  color: gray;
+  font-weight: normal;
 }
 
 #projects-pie-plot {

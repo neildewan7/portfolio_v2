@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neil Dewan — Data Science &amp; Finance</title>
-  <meta name="description" content="Neil Dewan — Data Science and Finance student at UC San Diego. Projects in geospatial analysis, multilingual NLP agents, and applied causal inference." />
+  <meta name="description" content="Neil Dewan — Data Science and Economics student at UC San Diego. Projects in geospatial analysis, multilingual NLP agents, and applied causal inference." />
   <link rel="canonical" href="https://neildewan7.github.io/portfolio_v2/" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Neil Dewan — Data Science & Finance" />
-  <meta property="og:description" content="Data Science and Finance student at UC San Diego. Projects in geospatial analysis, multilingual NLP agents, and applied causal inference." />
+  <meta property="og:description" content="Data Science and Economics student at UC San Diego. Projects in geospatial analysis, multilingual NLP agents, and applied causal inference." />
   <meta property="og:url" content="https://neildewan7.github.io/portfolio_v2/" />
   <meta property="og:image" content="https://neildewan7.github.io/portfolio_v2/images/headshot.jpg" />
   <meta name="twitter:card" content="summary" />
@@ -20,9 +20,30 @@
 </head>
 <body>
 
-  <h1>Neil Dewan</h1>
-  <img src="images/headshot.jpg" alt="Portrait of Neil Dewan" style="width: 200px; height: auto;">
-  <p>Hi, I'm Neil Dewan, a Data Science (major) and Finance (minor) student at the Halıcıoğlu Data Science Institute at UC San Diego, graduating June 2027. Feel free to check out some of my projects! All of my project code can be seen in depth on my GitHub.</p>
+  <section class="hero">
+    <img src="images/headshot.jpg" alt="Portrait of Neil Dewan">
+    <div class="hero-text">
+      <h1>Neil Dewan</h1>
+      <p class="tagline" data-en>Data Science + Economics @ UC San Diego, grad June 2027</p>
+      <p class="tagline" data-ja lang="ja">カリフォルニア大学サンディエゴ校 データサイエンス専攻・経済学副専攻（2027年6月卒業予定）</p>
+
+      <p data-en>
+        Hi, I'm Neil — a Data Science major and Economics minor at the Halıcıoğlu Data Science Institute,
+        bilingual in English and Japanese. I build things that sit between data, language, and decisions:
+        geospatial analysis, multilingual NLP agents, and applied causal inference. All of my project code
+        is on <a href="https://github.com/neildewan7">GitHub</a>.
+      </p>
+      <!-- JA: please proofread before this goes live, per your own instructions -->
+      <p data-ja lang="ja">
+        はじめまして、ニールと申します。Halıcıoğlu Data Science Instituteでデータサイエンスを専攻し、経済学を副専攻しています。
+        英語と日本語のバイリンガルです。データ、言語、意思決定の交差点にあるものづくりが好きで、地理空間分析、多言語対応のNLPエージェント、
+        因果推論の応用などに取り組んでいます。プロジェクトのコードはすべて<a href="https://github.com/neildewan7">GitHub</a>で公開しています。
+      </p>
+    </div>
+  </section>
+
+  <h2 data-en>Featured Projects</h2>
+  <h2 data-ja lang="ja">主なプロジェクト</h2>
 
   <!-- PIE CHART + LEGEND CONTAINER -->
   <div class="container">
@@ -37,10 +58,11 @@
     placeholder="🔍 Search projects…"
   />
 
-  <h2>Latest Projects</h2>
   <div class="projects">
     <!-- Latest 3 projects will be inserted here -->
   </div>
+
+  <p><a href="projects/">See all projects →</a></p>
 
   <h2>GitHub Stats</h2>
   <div id="profile-stats">
